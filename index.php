@@ -22,9 +22,9 @@
 			?>
 		</div>
         <div class="yui-u">
-        	<?php 
-			 echo $randomMovie;
-			?>
+        	<div id="result">
+               &nbsp;
+        	</div><input type="button" value="Neuer Film" id="refresh" />
 			
         </div>
     </div>
@@ -35,11 +35,17 @@
     
 	
 <script type="text/javascript">
-	$(document).ready(function() 
-    { 
-        $("#movieTable").tablesorter(); 
-    } 
+	
+	
+$(document).ready(function() 
+{ 
+    $("#movieTable").tablesorter();		 
+} 
 ); 
+	
+$("#refresh").click(function(){ 
+    $("#result").load("randomMovie.php"); 
+});	
 	
 </script>
 
