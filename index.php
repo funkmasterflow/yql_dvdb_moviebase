@@ -22,6 +22,7 @@
 			?>
 		</div>
         <div class="yui-u">
+            Random Movie:
         	<div id="result">
                &nbsp;
         	</div><input type="button" value="Neuer Film" id="refresh" />
